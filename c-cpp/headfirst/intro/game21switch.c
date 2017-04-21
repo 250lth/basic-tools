@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main2() {
+int main1b() {
     char card_name[3];
     int count = 0;
 
