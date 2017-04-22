@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int main3b() {
+int main3a() {
     float latitude;
     float longitude;
     char info[80];
