@@ -20,7 +20,7 @@ void badge(diver d) {
         d.name, d.kit.tank_capicity, d.kit.tank_psi, d.kit.suit_material);
 }
 
-int main() {
+int main5b() {
     diver randy = {"Randy", {5.5, 3500, "Neoprene"}};
     badge(randy);
     return 0;
