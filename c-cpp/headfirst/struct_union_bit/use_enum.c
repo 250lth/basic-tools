@@ -21,7 +21,7 @@ typedef struct {
     unit_of_measure units;
 } fruit_order;
 
-void display(fruit_order order) {
+void display1(fruit_order order) {
     printf("This order contains: ");
     if (order.units == PINTS)
         printf("%2.2f pints of %s\n", order.amount.volume, order.name);
