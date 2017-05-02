@@ -87,3 +87,33 @@ sudo docker exec -d daemon_dave touch /etc/new_config_file
 ## run interactive command
 sudo docker exec -t -i daemon_dave bash
 
+
+### Stop the daemon docker
+sudo docker stop daemon_dave
+
+
+### Auto restart docker
+sudo docker run --restart=always --name daemon_dave -d ubuntu bash -c "while true; do echo hello world; sleep 1; done"
+
+
+### Deep in docker
+
+## check docker
+sudo docker inspect daemon_dave
+
+## choose infomation
+sudo docker inspect --format='{{ .State.Running }}' daemon_dave
+true
+
+## check ip
+sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' daemon_dave
+
+## check multiple dockers
+sudo docker inspect --format '{{.Name}} {{.State.Running}}' daemon_dave lth_the_container
+
+
+### Delete dockers
+sudo docker rm
+
+## remove all
+sudo docker rm `sudo docker ps -a -q`
