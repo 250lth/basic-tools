@@ -9,7 +9,7 @@ int getline1(char *s, int lim) {
     char *t = s;
 
     while (--lim > 0 && (c = getchar()) != EOF && c != '\n')
-        *s++ - c;
+        *s++ = c;
     if (c == '\n')
         *s++ = c;
     *s = '\0';
