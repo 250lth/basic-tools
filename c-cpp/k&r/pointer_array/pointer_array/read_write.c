@@ -10,7 +10,7 @@
 static char allocbuf[ALLOCSIZE];
 static char *allocp = allocbuf;
 
-int getlines(char *, int);
+int getlines(char *s, int lim);
 char *alloc(int);
 
 int readlines(char *lineptr[], int maxlines) {
@@ -29,8 +29,6 @@ int readlines(char *lineptr[], int maxlines) {
 }
 
 void writelines(char *lineptr[], int nlines) {
-    int i;
-
     while (nlines-- > 0)
         printf("%s\n", *lineptr++);
 }
