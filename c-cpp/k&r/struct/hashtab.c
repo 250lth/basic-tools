@@ -44,5 +44,8 @@ struct nlist *install(char *name, char *defn) {
         np->next = hashtab[hashVal];
         hashtab[hashVal] = np;
     } else
-        free((void *))
+        free((void *) np->defn);
+    if ((np->defn = strdup(defn)) == NULL)
+        return NULL;
+    return np;
 }
