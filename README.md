@@ -7,5 +7,5 @@ C programming language
 big data: hadoop, spark
 os
 javascript
-scrap
+scrap: python, java
 search engine
