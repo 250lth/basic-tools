@@ -8,4 +8,4 @@ big data: hadoop, spark
 os
 javascript
 scrap: python, java
-search engine
+search engine: lucene
