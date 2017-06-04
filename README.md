@@ -1,4 +1,5 @@
-# lth_from_the_beginning
+#
+lth_from_the_beginning
 From the beginning, trust the process
 
 ======
@@ -9,5 +10,6 @@ os
 javascript
 scrap: python, java
 search engine: lucene
+other tools
 tools: mahout, rabbitmq
 #TrustTheProcess
