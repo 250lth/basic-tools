@@ -12,4 +12,6 @@ scrap: python, java
 search engine: lucene
 other tools
 tools: mahout, rabbitmq
+machine learning
 #TrustTheProcess
+
