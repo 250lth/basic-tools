@@ -10,7 +10,6 @@ os
 javascript
 scrap: python, java
 search engine: lucene
-other tools
 tools: mahout, rabbitmq
 machine learning: R
 #TrustTheProcess
