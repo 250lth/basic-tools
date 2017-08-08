@@ -23,3 +23,20 @@ Case282
     ${cal2}    Evaluate    ${cal1}+1
     ${cal1}    Set Variable    '123'
     ${cal2}    Evaluate    int(${cal1})+1
+
+Case283
+    @{Val3}    Set Variable    1    2    3
+    @{listVal3}    Create List    3     2    1
+    Run Keyword    log    abcd    WARN
+    @{argVal3}    Create List    abcd    WARN
+    ${keyword}    Set Variable    log
+    Run Keyword    ${keyword}    @{argVal3}
+    log    @{argVal3}
+    @{useList}    Create List    a    b    c
+    log    @{useList}[1]
+    log    ${useList[1]}
+    @{listA}    Create List    1    2
+    @{listB}    Create List    3    4
+    @{listC}    Create List    ${listA}    ${listB}    5
+    log    @{listC}[1][1]
+    log    ${listC[1][1]}
