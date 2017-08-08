@@ -1,3 +1,6 @@
+*** Settings ***
+Variables         var.py
+
 *** Variables ***
 ${val1}           value
 @{listVal1}       abc    def    123

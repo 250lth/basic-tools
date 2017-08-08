@@ -1,0 +1,6 @@
+*** Settings ***
+Resource          NewResource.robot
+
+*** Test Cases ***
+Case292
+    random char    arg1value    \    arg31    arg32
