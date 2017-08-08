@@ -40,3 +40,14 @@ Case283
     @{listC}    Create List    ${listA}    ${listB}    5
     log    @{listC}[1][1]
     log    ${listC[1][1]}
+
+Case284
+    @{argVal4}    Create List    abcd    WARN
+    log    ${argVal4}
+    ${listVal4}    Create List    1234    5678
+    log    =@{listVal4}=
+    log    =@{argVal4}=
+    @{argVal4}    Create List    4444    8888
+    log    ${argVal4}
+    @{argval4}    Create List    4444    8888
+    log     ${argVal4}
