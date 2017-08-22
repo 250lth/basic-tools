@@ -1,0 +1,2 @@
+server1 ansible_ssh_host=10.0.2.15 ansible_ssh_port=32768
+server2 ansible_ssh_host=10.0.2.15 ansible_ssh_port=32769
