@@ -1,3 +1,5 @@
+---
+
 - name: Configure webserver with nginx
   hosts: server1
   become: True
