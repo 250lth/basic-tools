@@ -1,0 +1,11 @@
+---
+
+- name: Copy and Get the example.fact
+  hosts: server1
+  become: True
+  tasks:
+          - name: print ansible_local
+            debug: var=ansible_local
+
+          - name: pring book title
+            debug: msg="The title of the book is {{ ansible_local.example.book.title }}"
