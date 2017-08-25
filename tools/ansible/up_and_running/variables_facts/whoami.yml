@@ -6,5 +6,15 @@
           - name: capture output of id command
             command: id -un
             register: login
-          - debug: var=login
+          - debug: msg=login
 
+          - name: capture output of id command 2
+            command: id -un
+            register: login
+          - debug: msg="Logged in as user {{ login.stdout }}"
+
+          - name: Run myprog
+            command: /opt/myprog
+            register: result
+            ignore_errors: True
+          - debug: var=result
