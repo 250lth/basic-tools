@@ -1,0 +1,12 @@
+web:
+        image: lth250/composeapp
+        command: python app.py
+        ports:
+                - "5000:5000"
+        volumes:
+                - .:/composeapp
+        links:
+                - redis
+
+redis:
+        image: redis
