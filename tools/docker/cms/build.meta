@@ -1,0 +1,11 @@
+
+project.name=${docker.project.name}
+project.version=${docker.project.version}
+project.path=${docker.project.path}
+server.port=${docker.server.port}
+
+build.os.arch=${os.arch}
+build.os.name=${os.name}
+build.os.version=${os.version}
+
+build.time=${docker.build.timestamp}

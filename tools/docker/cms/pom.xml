@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dockerbuild</artifactId>
+        <groupId>com.bigbigcloud.docker</groupId>
+        <version>1.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>cms</artifactId>
+    <packaging>pom</packaging>
+    <name>dockerbuild cms</name>
+    <version>17.06.08</version>
+
+    <properties>
+        <docker.project.name>cms</docker.project.name>
+        <docker.project.version>0.9.30.0</docker.project.version>
+        <docker.project.path>/opt/webapps/${docker.project.name}</docker.project.path>
+        <docker.spring.config.location>${docker.project.path}/conf</docker.spring.config.location>
+        <docker.server.port>8080</docker.server.port>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>${project.basedir}</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/Dockerfile</include>
+                    <include>**/uwsgi.ini</include>
+                    <include>**/supervisor-app.ini</include>
+                    <include>**/nginx-webapp.conf</include>
+                    <include>**/docker-entrypoint.sh</include>
+                    <include>**/build.meta</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.bigbigcloud</groupId>
+                                    <artifactId>cms</artifactId>
+                                    <version>${docker.project.version}</version>
+                                    <classifier>bin</classifier>
+                                    <type>tar.gz</type>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                    <destFileName>${docker.project.name}.tar.gz</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
