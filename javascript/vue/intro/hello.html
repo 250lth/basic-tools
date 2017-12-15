@@ -1,0 +1,122 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+  <p>{{ message }}</p>
+</div>
+
+<div id="app-2">
+  <span v-bind:title="message">
+    mouse here for a few seconds!!
+  </span>
+</div>
+
+<div id="app-3">
+  <p v-if="seen">
+    Now you see me!
+  </p>
+</div>
+
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+
+<div id="app-5">
+  <p>
+    {{ message }}
+  </p>
+  <button v-on:click="reverseMessage">
+    Reverse the message
+  </button>
+</div>
+
+<div id="app-6">
+  <p>
+    {{ message }}
+  </p>
+  <input v-model="message">
+</div>
+
+<div id="app-7">
+  <ol>
+    <!-- create a to-do item instance -->
+    <todo-item>
+      v-for="item in groceryList"
+      v-bind:todo="item"
+      v-bind:key="item.id"
+    </todo-item>
+  </ol>
+</div>
+
+
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue.js!'
+    }
+  })
+
+  var app2 = new Vue({
+    el: '#app-2',
+    data: {
+      message: 'The page is loaded on ' + new Date().toLocaleString()
+    }
+  })
+
+  var app3 = new Vue({
+    el: '#app-3',
+    data: {
+      seen: true
+    }
+  })
+
+  var app4 = new Vue({
+    el: '#app-4',
+    data: {
+      todos: [
+        { text: 'learn js' },
+        { text: 'learn vue' },
+        { text: 'finish a project' }
+      ]
+    }
+  })
+
+  var app5 = new Vue({
+    el: '#app-5',
+    data: {
+      message: 'Hello Vue.js'
+    },
+    methods: {
+      reverseMessage: function() {
+        this.message = this.message.split('').reverse().join('')
+      }
+    }
+  })
+
+  var app6 = new Vue({
+    el: '#app-6',
+    data: {
+      message: 'Hello Vue!'
+    }
+  })
+
+  Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{ todo.text }}</li>'
+  })
+
+  var app7 = new Vue({
+    el: '#app-7',
+    data: {
+      groceryList: [
+        { id: 0, text: 'vegetables' },
+        { id: 1, text: 'cheese' },
+        { id: 2, text: 'anything' }
+      ]
+    }
+  })
+</script>
