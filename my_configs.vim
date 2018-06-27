@@ -1,0 +1,2 @@
+colorscheme papercolor
+set nu
