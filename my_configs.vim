@@ -1,5 +1,6 @@
 colorscheme papercolor
 set nu
+set nowrap sidescroll=1 siso=15
 
 " => vim-vue
 autocmd FileType vue syntax sync fromstart
