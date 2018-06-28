@@ -16,3 +16,4 @@ git@github.com:tpope/vim-endwise.git
 git@github.com:vim-ruby/vim-ruby.git
 git@github.com:Glench/Vim-Jinja2-Syntax.git
 git@github.com:tpope/vim-surround.git
+git@github.com:ElmCast/elm-vim.git
