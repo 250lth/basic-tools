@@ -17,3 +17,5 @@ git@github.com:vim-ruby/vim-ruby.git
 git@github.com:Glench/Vim-Jinja2-Syntax.git
 git@github.com:tpope/vim-surround.git
 git@github.com:ElmCast/elm-vim.git
+git@github.com:jelera/vim-javascript-syntax.git
+git@github.com:mattn/emmet-vim.git

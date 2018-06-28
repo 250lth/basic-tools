@@ -28,3 +28,16 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:elm_syntastic_show_warnings = 1
 let g:ycm_semantic_triggers = {'elm' : ['.']}
+
+" => vim-javascript
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+let g:javascript_plugin_flow = 1
+augroup javascript_folding
+    au!
+    au FileType javascript setlocal foldmethod=syntax
+augroup END
+
+" => emment-vim
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
