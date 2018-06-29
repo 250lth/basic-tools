@@ -1,4 +1,5 @@
-colorscheme papercolor
+let g:seiya_auto_enable=1
+colorscheme PaperColor
 set nu
 map <C-i> :set wrap<CR>
 map <C-o> :set nowrap sidescroll=1 siso=15<CR>
