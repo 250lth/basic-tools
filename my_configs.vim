@@ -42,3 +42,12 @@ augroup END
 " => emment-vim
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
+
+" => idris-vim
+let g:idris_indent_if = 3
+let g:idris_indent_case = 5
+let g:idris_indent_let = 4
+let g:idris_indent_where = 6
+let g:idris_indent_do = 3
+let g:idris_indent_rewrite = 8
+let g:idris_conceal = 1

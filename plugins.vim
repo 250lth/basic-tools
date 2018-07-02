@@ -20,3 +20,4 @@ git@github.com:ElmCast/elm-vim.git
 git@github.com:jelera/vim-javascript-syntax.git
 git@github.com:mattn/emmet-vim.git
 git@github.com:miyakogi/seiya.vim.git
+git@github.com:idris-hackers/idris-vim.git
