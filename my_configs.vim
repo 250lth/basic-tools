@@ -23,6 +23,7 @@ let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
 " => nerd tree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let g:NERDTreeShowHidden=1
 
 " => elm-vim
 let g:syntastic_always_populate_loc_list = 1
