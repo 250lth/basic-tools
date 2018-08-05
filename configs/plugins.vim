@@ -21,3 +21,7 @@ git@github.com:jelera/vim-javascript-syntax.git
 git@github.com:mattn/emmet-vim.git
 git@github.com:miyakogi/seiya.vim.git
 git@github.com:idris-hackers/idris-vim.git
+git@github.com:tfnico/vim-gradle.git
+git@github.com:udalov/kotlin-vim.git
+git@github.com:artur-shaik/vim-javacomplete2.git
+git@github.com:pangloss/vim-javascript.git
