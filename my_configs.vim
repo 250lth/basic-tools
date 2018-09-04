@@ -6,7 +6,12 @@ map <C-o> :set nowrap sidescroll=1 siso=15<CR>
 
 " tab styles
 autocmd filetype javascript setlocal shiftwidth=2 tabstop=2
+autocmd filetype html setlocal shiftwidth=2 tabstop=2
+autocmd filetype css setlocal shiftwidth=2 tabstop=2
+autocmd filetype vue setlocal shiftwidth=2 tabstop=2
 autocmd filetype elm setlocal shiftwidth=2 tabstop=2
+autocmd filetype idris setlocal shiftwidth=2 tabstop=2
+autocmd filetype yaml setlocal shiftwidth=2 tabstop=2
 
 " => vim-vue
 autocmd FileType vue syntax sync fromstart
