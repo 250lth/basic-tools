@@ -61,3 +61,7 @@ let g:idris_indent_where = 6
 let g:idris_indent_do = 3
 let g:idris_indent_rewrite = 8
 let g:idris_conceal = 1
+
+" => vim-javacomplete2
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+let g:JavaComplete_EnableDefaultMappings = 0
