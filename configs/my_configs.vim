@@ -12,6 +12,7 @@ autocmd filetype vue setlocal shiftwidth=2 tabstop=2
 autocmd filetype elm setlocal shiftwidth=2 tabstop=2
 autocmd filetype idris setlocal shiftwidth=2 tabstop=2
 autocmd filetype yaml setlocal shiftwidth=2 tabstop=2
+autocmd filetype haskell setlocal shiftwidth=2 tabstop=2
 
 " => vim-vue
 autocmd FileType vue syntax sync fromstart
@@ -65,3 +66,8 @@ let g:idris_conceal = 1
 " => vim-javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 let g:JavaComplete_EnableDefaultMappings = 0
+
+" => dart-vim-plugin
+let dart_html_in_string=v:true
+let dart_style_guide = 2
+let dart_format_on_save = 1

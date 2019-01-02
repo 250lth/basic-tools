@@ -25,3 +25,4 @@ git clone git@github.com:tfnico/vim-gradle.git
 git clone git@github.com:udalov/kotlin-vim.git
 git clone git@github.com:artur-shaik/vim-javacomplete2.git
 git clone git@github.com:pangloss/vim-javascript.git
+git clone git@github.com:dart-lang/dart-vim-plugin.git
