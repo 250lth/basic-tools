@@ -3,6 +3,7 @@ colorscheme PaperColor
 set nu
 map <C-i> :set wrap<CR>
 map <C-o> :set nowrap sidescroll=1 siso=15<CR>
+set splitbelow
 
 " tab styles
 autocmd filetype javascript setlocal shiftwidth=2 tabstop=2
