@@ -5,11 +5,6 @@ map <C-i> :set wrap<CR>
 map <C-o> :set nowrap sidescroll=1 siso=15<CR>
 set splitbelow
 
-map <C-J> <C-W>J
-map <C-K> <C-W>K
-map <C-H> <C-W>H
-map <C-L> <C-W>L
-
 " tab styles
 autocmd filetype javascript setlocal shiftwidth=2 tabstop=2
 autocmd filetype html setlocal shiftwidth=2 tabstop=2
