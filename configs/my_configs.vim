@@ -16,6 +16,7 @@ autocmd filetype yaml setlocal shiftwidth=2 tabstop=2
 autocmd filetype haskell setlocal shiftwidth=2 tabstop=2
 autocmd filetype dart setlocal shiftwidth=2 tabstop=2
 autocmd filetype scala setlocal shiftwidth=2 tabstop=2
+autocmd filetype sbt setlocal shiftwidth=2 tabstop=2
 
 " => vim-vue
 autocmd FileType vue syntax sync fromstart
