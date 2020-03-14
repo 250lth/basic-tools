@@ -1,0 +1,8 @@
+[Unit]
+Description=Trojan proxy
+
+[Service]
+ExecStart=/usr/bin/trojan /home/lth/trojan/conf1.json
+
+[Install]
+WantedBy=multi-user.target
