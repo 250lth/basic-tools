@@ -4,9 +4,7 @@ set nu
 map <C-i> :set wrap<CR>
 map <C-o> :set nowrap sidescroll=1 siso=15<CR>
 set splitbelow
-
-" python
-let g:ycm_python_binary_path = 'python'
+set cursorline
 
 " tab styles
 autocmd filetype javascript setlocal shiftwidth=2 tabstop=2
