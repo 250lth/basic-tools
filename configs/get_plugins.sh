@@ -27,3 +27,4 @@ git clone git@github.com:artur-shaik/vim-javacomplete2.git
 git clone git@github.com:pangloss/vim-javascript.git
 git clone git@github.com:dart-lang/dart-vim-plugin.git
 git clone git@github.com:gleam-lang/gleam.vim.git
+git clone git@github.com:fatih/vim-go.git
