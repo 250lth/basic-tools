@@ -6,6 +6,13 @@ map <C-o> :set nowrap sidescroll=1 siso=15<CR>
 set splitbelow
 set cursorline
 
+" use tab for coc trigger
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
 " tab styles
 autocmd filetype javascript setlocal shiftwidth=2 tabstop=2
 autocmd filetype html setlocal shiftwidth=2 tabstop=2
