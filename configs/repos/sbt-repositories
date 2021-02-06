@@ -1,0 +1,14 @@
+[repositories]
+#本地源
+local
+#兼容 Ivy 路径布局
+apache-ivy: https://repo1.maven.apache.org/maven2/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+#apache maven
+apache-mvn: https://repo1.maven.apache.org/maven2/
+#国内源，aliyun
+aliyun: https://maven.aliyun.com/nexus/content/groups/public/
+#添加国外源备用
+typesafe: https://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
+sonatype-oss-releases
+maven-central
+sonatype-oss-snapshots
