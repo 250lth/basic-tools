@@ -10,7 +10,7 @@ sudo apt update
 sudo apt install -y kubelet kubeadm kubectl
 
 # install k8s
-sudo kubeadm init --pod-network-cidr=10.31.0.0/16
+sudo kubeadm init --pod-network-cidr=10.31.3.0/24
 
 # cp k8s config
 mkdir ~/.kube
