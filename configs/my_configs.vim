@@ -6,9 +6,8 @@ map <C-o> :set nowrap sidescroll=1 siso=15<CR>
 set splitbelow
 set cursorline
 
-au BufWrite * :Autoformat
+noremap <F3> :Autoformat<CR>
 
-" use tab for coc trigger
 inoremap <silent><expr> <TAB>
             \ pumvisible() ? "\<C-n>" :
             \ <SID>check_back_space() ? "\<TAB>" :
@@ -89,3 +88,19 @@ let g:JavaComplete_EnableDefaultMappings = 0
 let dart_html_in_string=v:true
 let dart_style_guide = 2
 let dart_format_on_save = 1
+
+let g:lightline = {
+      \ 'colorscheme': 'ayu_dark',
+      \ 'component_function': {
+      \   'filename': 'LightlineFilename',
+      \ }
+      \ }
+
+function! LightlineFilename()
+  let root = fnamemodify(get(b:, 'git_dir'), ':h')
+  let path = expand('%:p')
+  if path[:len(root)-1] ==# root
+    return path[len(root)+1:]
+  endif
+  return expand('%')
+endfunction
