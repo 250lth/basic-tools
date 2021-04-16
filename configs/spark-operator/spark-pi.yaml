@@ -22,12 +22,12 @@ spec:
   type: Scala
   mode: cluster
   #image: "gcr.io/spark-operator/spark:v3.0.0"
-  image: "harbor.apulis.cn:8443/dataeyes/spark:3.0.1"
+  image: "harbor.apulis.cn:8443/dataeyes/spark:3.1.1"
   #imagePullPolicy: Always
   imagePullPolicy: IfNotPresent
   mainClass: org.apache.spark.examples.SparkPi
-  mainApplicationFile: "local:///opt/spark/examples/jars/spark-examples_2.12-3.0.1.jar"
-  sparkVersion: "3.0.0"
+  mainApplicationFile: "local:///opt/spark/examples/jars/spark-examples_2.12-3.1.1.jar"
+  sparkVersion: "3.1.1"
   restartPolicy:
     type: Never
   volumes:
@@ -40,7 +40,7 @@ spec:
     coreLimit: "1200m"
     memory: "512m"
     labels:
-      version: 3.0.0
+      version: 3.1.1
     serviceAccount: spark
     volumeMounts:
       - name: "test-volume"
@@ -50,7 +50,7 @@ spec:
     instances: 1
     memory: "512m"
     labels:
-      version: 3.0.0
+      version: 3.1.1
     volumeMounts:
       - name: "test-volume"
         mountPath: "/tmp"
